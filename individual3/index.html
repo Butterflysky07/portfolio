@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sabor Quisqueyano</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <a href="../index.html" class="back-btn">⬅ Back to Portfolio</a>
+    <h1>Individual Assignment 3</h1>
+
+    <header class="site-header">
+        <div class="header-overlay">
+            <h1>Sabor Quisqueyano</h1>
+            <p>Authentic Dominican Food Made with Love</p>
+        </div>
+    </header>
+
+    <main>
+
+        <h2 class="menu-title">Our Menu</h2>
+        <p class="intro-text">
+            Enjoy the rich flavors of Dominican cuisine with our traditional dishes, refreshing juices, and homemade
+            desserts.
+        </p>
+
+        <section class="desktop-view">
+
+            <h3 class="menu-section-title">Main Dishes</h3>
+            <div class="gallery">
+                <figure class="gallery-card"
+                    onclick="openModal('images/mofongo.png', 'Mofongo', 'Mashed green plantains seasoned with garlic and served with meat or shrimp.')">
+                    <img src="images/mofongo.png" alt="Mofongo">
+                    <figcaption>Mofongo</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/rice-beans-chicken.png', 'Rice, Beans, and Baked Chicken', 'A traditional Dominican meal with white rice, red beans, and tender baked chicken.')">
+                    <img src="images/rice-beans-chicken.png" alt="Rice, Beans, and Baked Chicken">
+                    <figcaption>Rice, Beans, and Baked Chicken</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/beef-tostones.png', 'Beef with Tostones', 'Seasoned beef served with crispy fried plantains and fresh salad.')">
+                    <img src="images/beef-tostones.png" alt="Beef with Tostones">
+                    <figcaption>Beef with Tostones</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/potato-salad.png', 'Potato Salad', 'A creamy Dominican-style potato salad made with vegetables and rich flavor.')">
+                    <img src="images/potato-salad.png" alt="Potato Salad">
+                    <figcaption>Potato Salad</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/sancocho.png', 'Sancocho', 'A rich Dominican stew made with meats, root vegetables, and traditional Caribbean seasoning.')">
+                    <img src="images/sancocho.png" alt="Sancocho">
+                    <figcaption>Sancocho</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/pescado-frito.png', 'Fried Fish with Tostones', 'Crispy fried fish served with tostones and fresh lime.')">
+                    <img src="images/pescado-frito.png" alt="Fried Fish with Tostones">
+                    <figcaption>Fried Fish with Tostones</figcaption>
+                </figure>
+            </div>
+
+            <h3 class="menu-section-title">Drinks</h3>
+            <div class="gallery">
+                <figure class="gallery-card"
+                    onclick="openModal('images/jugo-limon.png', 'Lemon Juice', 'Fresh lemon juice served chilled.')">
+                    <img src="images/jugo-limon.png" alt="Lemon Juice">
+                    <figcaption>Lemon Juice</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/jugo-mango.png', 'Mango Juice', 'Sweet and refreshing mango juice made fresh daily.')">
+                    <img src="images/jugo-mango.png" alt="Mango Juice">
+                    <figcaption>Mango Juice</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/jugo-papaya.png', 'Papaya Juice', 'Smooth papaya juice with a tropical flavor.')">
+                    <img src="images/jugo-papaya.png" alt="Papaya Juice">
+                    <figcaption>Papaya Juice</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/jugo-passion.png', 'Passion Fruit Juice', 'A refreshing passion fruit drink with tropical flavor.')">
+                    <img src="images/jugo-passion.png" alt="Passion Fruit Juice">
+                    <figcaption>Passion Fruit Juice</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/morir-sonando.png', 'Morir Soñando', 'A classic Dominican drink made with orange juice, milk, sugar, and ice.')">
+                    <img src="images/morir-sonando.png" alt="Morir Soñando">
+                    <figcaption>Morir Soñando (Orange & Milk Drink)</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/merengue-soda.png', 'Merengue Soda', 'A Dominican soft drink served cold and refreshing.')">
+                    <img src="images/merengue-soda.png" alt="Merengue Soda">
+                    <figcaption>Merengue Soda</figcaption>
+                </figure>
+            </div>
+
+            <h3 class="menu-section-title">Desserts</h3>
+            <div class="gallery">
+                <figure class="gallery-card"
+                    onclick="openModal('images/flan.png', 'Flan', 'A creamy caramel custard dessert loved across Latin cuisine.')">
+                    <img src="images/flan.png" alt="Flan">
+                    <figcaption>Flan</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/tres-leches.png', 'Tres Leches Cake', 'A soft sponge cake soaked in three kinds of milk.')">
+                    <img src="images/tres-leches.png" alt="Tres Leches Cake">
+                    <figcaption>Tres Leches Cake</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/arroz-dulce.png', 'Arroz con Dulce', 'A sweet Dominican-style rice dessert flavored with cinnamon and raisins.')">
+                    <img src="images/arroz-dulce.png" alt="Arroz con Dulce">
+                    <figcaption>Arroz con Dulce</figcaption>
+                </figure>
+
+                <figure class="gallery-card"
+                    onclick="openModal('images/habichuelas-dulce.png', 'Habichuelas con Dulce', 'A traditional Dominican sweet bean dessert served cold or warm.')">
+                    <img src="images/habichuelas-dulce.png" alt="Habichuelas con Dulce">
+                    <figcaption>Habichuelas con Dulce</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="tablet-view">
+            <h3 class="menu-section-title">Main Dishes</h3>
+
+            <div class="menu-item">
+                <img src="images/mofongo.png" alt="Mofongo">
+                <div class="menu-text">
+                    <h3>Mofongo</h3>
+                    <p>Mashed green plantains seasoned with garlic and served with meat or shrimp.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/rice-beans-chicken.png" alt="Rice, Beans, and Baked Chicken">
+                <div class="menu-text">
+                    <h3>Rice, Beans, and Baked Chicken</h3>
+                    <p>A traditional Dominican meal with white rice, red beans, and tender baked chicken.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/beef-tostones.png" alt="Beef with Tostones">
+                <div class="menu-text">
+                    <h3>Beef with Tostones</h3>
+                    <p>Seasoned beef served with crispy fried plantains and fresh salad.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/potato-salad.png" alt="Potato Salad">
+                <div class="menu-text">
+                    <h3>Potato Salad</h3>
+                    <p>A creamy Dominican-style potato salad made with vegetables and rich flavor.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/sancocho.png" alt="Sancocho">
+                <div class="menu-text">
+                    <h3>Sancocho</h3>
+                    <p>A rich Dominican stew made with meats, root vegetables, and traditional Caribbean seasoning.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/pescado-frito.png" alt="Fried Fish with Tostones">
+                <div class="menu-text">
+                    <h3>Fried Fish with Tostones</h3>
+                    <p>Crispy fried fish served with tostones and fresh lime.</p>
+                </div>
+            </div>
+
+            <h3 class="menu-section-title">Drinks</h3>
+
+            <div class="menu-item">
+                <img src="images/jugo-limon.png" alt="Lemon Juice">
+                <div class="menu-text">
+                    <h3>Lemon Juice</h3>
+                    <p>Fresh lemon juice served chilled.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/jugo-mango.png" alt="Mango Juice">
+                <div class="menu-text">
+                    <h3>Mango Juice</h3>
+                    <p>Sweet and refreshing mango juice made fresh daily.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/jugo-papaya.png" alt="Papaya Juice">
+                <div class="menu-text">
+                    <h3>Papaya Juice</h3>
+                    <p>Smooth papaya juice with a tropical flavor.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/jugo-passion.png" alt="Passion Fruit Juice">
+                <div class="menu-text">
+                    <h3>Passion Fruit Juice</h3>
+                    <p>A refreshing passion fruit drink with tropical flavor.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/morir-sonando.png" alt="Morir Soñando">
+                <div class="menu-text">
+                    <h3>Morir Soñando</h3>
+                    <p>A classic Dominican drink made with orange juice, milk, sugar, and ice.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/merengue-soda.png" alt="Merengue Soda">
+                <div class="menu-text">
+                    <h3>Merengue Soda</h3>
+                    <p>A Dominican soft drink served cold and refreshing.</p>
+                </div>
+            </div>
+
+            <h3 class="menu-section-title">Desserts</h3>
+
+            <div class="menu-item">
+                <img src="images/flan.png" alt="Flan">
+                <div class="menu-text">
+                    <h3>Flan</h3>
+                    <p>A creamy caramel custard dessert loved across Latin cuisine.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/tres-leches.png" alt="Tres Leches Cake">
+                <div class="menu-text">
+                    <h3>Tres Leches Cake</h3>
+                    <p>A soft sponge cake soaked in three kinds of milk.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/arroz-dulce.png" alt="Arroz con Dulce">
+                <div class="menu-text">
+                    <h3>Arroz con Dulce</h3>
+                    <p>A sweet Dominican-style rice dessert flavored with cinnamon and raisins.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/habichuelas-dulce.png" alt="Habichuelas con Dulce">
+                <div class="menu-text">
+                    <h3>Habichuelas con Dulce</h3>
+                    <p>A traditional Dominican sweet bean dessert served cold or warm.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mobile-view">
+            <h2>Visit Us</h2>
+            <p class="mobile-text">Find us easily and enjoy authentic Dominican food.</p>
+            <img src="images/map.png" alt="Map">
+            <p class="directions-note">
+                <a href="https://www.google.com/maps?q=Philadelphia,+PA" target="_blank">
+                    123 Caribbean Street, Food City, PA
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="desktop-footer">
+        <p><strong>Address:</strong> 123 Caribbean Street, Food City, PA</p>
+        <p><strong>Location:</strong> Near downtown with easy parking and a welcoming family atmosphere.</p>
+        <p><strong>Contact:</strong> Call us: (123) 456-7890</p>
+    </footer>
+
+    <footer class="tablet-footer">
+        <p><strong>Contact:</strong> (123) 456-7890</p>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Selected menu item">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(imageSrc, title, description) {
+            document.getElementById("imageModal").style.display = "flex";
+            document.getElementById("modalImage").src = imageSrc;
+            document.getElementById("modalTitle").textContent = title;
+            document.getElementById("modalDescription").textContent = description;
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            const modal = document.getElementById("imageModal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

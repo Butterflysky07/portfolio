@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Website</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a href="../index.html" class="back-btn">⬅ Back to Portfolio</a>
+
+    <h1>Partner Lab 2</h1>
+    <main class="container">
+        <section class="card">
+            <h1 id="greeting">Hello User!</h1>
+            <p id="message" class="main-massage">Welcome! Use the form below to customize this page.</p>
+        </section>
+
+        <section class="card">
+            <h2>Customize Your Page</h2>
+            <div class="form-row">
+                <label for="nameInput">Enter your name:</label>
+                <input type="text" id="nameInput" placeholder="e.g., Katy" />
+            </div>
+
+            <div class="form-row">
+                <label for="messageInput">Enter your message:</label>
+                <input type="text" id="messageInput" placeholder="Type a brief message..." />
+            </div>
+
+            <div class="form-row">
+                <label for="bgSelect">Choose a background color:</label>
+                <select id="bgSelect">
+                    <option value="white">White</option>
+                    <option value="lightyellow">Light Yellow</option>
+                    <option value="lavender">Lavender</option>
+                    <option value="lightpink">Light Pink</option>
+                    <option value="lightblue">Light Blue</option>
+                    <option value="lightgreen">Light Green</option>
+                </select>
+            </div>
+
+            <button id="applyBtn" class="primary">Submit / Apply Changes</button>
+        </section>
+
+        <section class="card">
+            <h2>To Do List</h2>
+
+            <div class="form-row">
+                <label for="todoInput">New to do item:</label>
+                <input type="text" id="todoInput" placeholder="Example: Practice speech outline" />
+            </div>
+
+            <button id="addTodoBtn">Add To Do</button>
+            <ol id="todoList" class="todo-list"></ol>
+        </section>
+    </main>
+</body>
+
+</html>
